@@ -1,0 +1,19 @@
+# Ingestion
+requests
+python-dotenv
+
+# Data wrangling + storage
+pandas
+pyarrow
+sqlalchemy
+psycopg[binary]
+
+# Analysis
+statsmodels
+scikit-learn
+matplotlib
+
+# Dev
+jupyter
+pytest
+ruff
