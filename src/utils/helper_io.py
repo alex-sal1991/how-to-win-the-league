@@ -24,4 +24,7 @@ def read_json(filename: str | Path) -> dict:
     
     return json.loads(json_path.read_text(encoding="utf-8"))
     
-    
+def latest_json(folder: str | Path, prefix: str) -> Path | None:
+    """Newest '<prefix>_<timestamp>.json' in folder, or None if there isn't one."""
+    files = sorted(Path(folder).glob(f"{prefix}_*.json"))
+    return files[-1] if files else None   
