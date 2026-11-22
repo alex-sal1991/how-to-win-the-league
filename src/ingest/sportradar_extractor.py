@@ -9,7 +9,7 @@ from src.config import LEAGUES
 
 load_dotenv()
 API_KEY = os.getenv("SPORTRADAR_API_KEY")
-if API_KEY is None:
+if not API_KEY:
     raise ValueError("SPORTRADAR_API_KEY is missing or empty")
 
 BASE_URL = "https://api.sportradar.com/soccer-extended/trial/v4/en"
