@@ -181,6 +181,6 @@ def extract_match_stats(leagues: list[str] | None = None, seasons: list[str] | N
 
 if __name__ == "__main__":
     
-    # extract_all_competitions("competitions")
-    # extract_matches()
-    extract_match_stats(leagues=["belgian_pro"], seasons=["2022"])
+    extract_all_competitions("competitions")
+    extract_matches()
+    extract_match_stats()
